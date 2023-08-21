@@ -31,13 +31,13 @@ yarn add emd-rest
 
 To get started with `emd-rest`, import it in your project:
 
-\```javascript
+```javascript
 const restHelper = require('emd-rest');
 // OR
 import restHelper from 'emd-rest';
-\```
+```
 
-\```javascript
+```javascript
 // Example usage
 restHelper.get("https://jsonplaceholder.typicode.com/todos/1", {params: {id: 1}})
 .then( res => console.log(res))
@@ -62,7 +62,7 @@ console.log(res);
 console.log(err);
 }
 }
-\```
+```
 
 ## 📘 API Documentation
 
