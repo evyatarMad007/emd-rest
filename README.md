@@ -9,9 +9,8 @@
 ## 📖 Table of Contents
 
 - [Installation](#-installation)
-- [Usage](#-usage)
-- [API Documentation](#-api-documentation)
 - [Examples](#-examples)
+- [API Documentation](#-api-documentation)
 - [Contribute](#-contribute)
 - [License](#-license)
 
