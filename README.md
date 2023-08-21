@@ -3,6 +3,13 @@
 ![npm](https://img.shields.io/npm/v/emd-rest.svg?style=flat-square)
 ![Travis (.org)](https://img.shields.io/travis/evyatarMad007/emd-rest.svg?style=flat-square)
 ![license](https://img.shields.io/github/license/evyatarMad007/emd-rest.svg?style=flat-square)
+![npm downloads](https://img.shields.io/npm/dm/emd-rest.svg?style=flat-square)
+![node version](https://img.shields.io/node/v/emd-rest.svg?style=flat-square)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/evyatarMad007/emd-rest.svg?style=flat-square)
+![GitHub top language](https://img.shields.io/github/languages/top/evyatarMad007/emd-rest.svg?style=flat-square)
+![GitHub last commit](https://img.shields.io/github/last-commit/evyatarMad007/emd-rest.svg?style=flat-square)
+![GitHub issues](https://img.shields.io/github/issues/evyatarMad007/emd-rest.svg?style=flat-square)
+
 
 > **DESCRIPTION**: Introducing a refined HTTP client experience, our library takes inspiration from Axios, providing all its powerful features, but with an added twist. Our library seamlessly integrates advanced logging capabilities. Every request and response, along with relevant metadata, is conveniently printed to the console, making debugging and tracking easier than ever. For developers who seek clarity and transparency in their HTTP requests without additional setup, this is the tool to elevate your development workflow.
 
