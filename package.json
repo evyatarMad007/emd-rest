@@ -1,6 +1,6 @@
 {
   "name": "emd-rest",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Helper REST API",
   "main": "dist/index.js",
   "author": "Evyatar Madari",

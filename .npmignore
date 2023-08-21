@@ -2,7 +2,7 @@ coverage
 node_modules
 .gitignore
 .npmrc
-src
+# src
 .idea
 tsconfig.json
 package.json
