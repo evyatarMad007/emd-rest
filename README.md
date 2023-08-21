@@ -17,15 +17,15 @@
 
 ## 📦 Installation
 
-\```bash
+```bash
 npm install emd-rest
-\```
+```
 
 or
 
-\```bash
+```bash
 yarn add emd-rest
-\```
+```
 
 ## 💡 Examples
 
