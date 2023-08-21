@@ -1,6 +1,6 @@
 {
   "name": "emd-rest",
-  "version": "0.0.1",
+  "version": "0.0.6",
   "description": "Helper REST API",
   "main": "dist/index.js",
   "author": "Evyatar Madari",
@@ -12,7 +12,7 @@
   "scripts": {
     "build": "rollup -c -m",
     "upgrade": "npm i && npm run build",
-    "git": "git add . && git commit -m \"update\" && git push && git fetch && git pull",
+    "git": "git add . && git commit -m \"update\" && git push",
     "git:p": "npm version patch && npm run git && npm run upgrade && npm publish"
   },
   "dependencies": {

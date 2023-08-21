@@ -9,9 +9,8 @@
 ## 📖 Table of Contents
 
 - [Installation](#-installation)
-- [Usage](#-usage)
-- [API Documentation](#-api-documentation)
 - [Examples](#-examples)
+- [API Documentation](#-api-documentation)
 - [Contribute](#-contribute)
 - [License](#-license)
 
@@ -20,9 +19,7 @@
 ```bash
 npm install emd-rest
 ```
-
 or
-
 ```bash
 yarn add emd-rest
 ```
@@ -33,36 +30,110 @@ To get started with `emd-rest`, import it in your project:
 
 ```javascript
 const restHelper = require('emd-rest');
-// OR
+```
+or
+```javascript
 import restHelper from 'emd-rest';
 ```
 
+
+Example usage:
 ```javascript
-// Example usage
 restHelper.get("https://jsonplaceholder.typicode.com/todos/1", {params: {id: 1}})
 .then( res => console.log(res))
 .catch( err => console.log(err));
+```
 
-// in async await function
+in async await function:
+```javascript
 async function getTodo() {
-try {
-const res = await restHelper.get("https://jsonplaceholder.typicode.com/todos/1", {params: {id: 1}});
-console.log(res);
-} catch (err) {
-console.log(err);
-}
-}
-
-// arrow function async await
-const getTodo = async () => {
-try {
-const res = await restHelper.get("https://jsonplaceholder.typicode.com/todos/1", {params: {id: 1}});
-console.log(res);
-} catch (err) {
-console.log(err);
-}
+    try {
+        const res = await restHelper.get("https://jsonplaceholder.typicode.com/todos/1", {params: {id: 1}});
+        console.log(res);
+    } catch (err) {
+        console.log(err);
+    }
 }
 ```
+
+arrow function async await:
+```javascript
+const getTodo = async () => {
+    try {
+        const res = await restHelper.get("https://jsonplaceholder.typicode.com/todos/1", {params: {id: 1}});
+        console.log(res);
+    } catch (err) {
+        console.log(err);
+    }
+}
+```
+
+POST request with data and config:
+```javascript
+const data = {
+    title: 'foo',
+    body: 'bar',
+    userId: 1,
+};
+
+const config = {
+    timeout: 1000,
+    withCredentials: true,
+    httpsAgent: new https.Agent({ keepAlive: true }),
+};
+
+restHelper.post("https://jsonplaceholder.typicode.com/posts", data, config)
+.then( res => console.log(res))
+.catch( err => console.log(err));
+```
+
+PUT request with headers and data:
+```javascript
+const headers = {
+    'Content-type': 'application/json; charset=UTF-8',
+};
+
+const data = {
+    title: 'foo',
+    body: 'bar',
+    userId: 1,
+};
+
+restHelper.put("https://jsonplaceholder.typicode.com/posts/1", data, {headers})
+.then( res => console.log(res))
+.catch( err => console.log(err));
+```
+
+DELETE request with headers and data:
+```javascript
+const headers = {
+    'Content-type': 'application/json; charset=UTF-8',
+};
+
+const data = {
+    title: 'foo',
+    body: 'bar',
+    userId: 1,
+};
+
+restHelper.delete("https://jsonplaceholder.typicode.com/posts/1", {headers, data})
+.then( res => console.log(res))
+.catch( err => console.log(err));
+```
+
+PATCH request with data:
+```javascript
+const data = {
+    title: 'foo',
+    body: 'bar',
+    userId: 1,
+};
+
+restHelper.patch("https://jsonplaceholder.typicode.com/posts/1", data)
+.then( res => console.log(res))
+.catch( err => console.log(err));
+```
+
 
 ## 📘 API Documentation
 
